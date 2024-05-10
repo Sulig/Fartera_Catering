@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <title>Fartera Catering</title>
+    
+        <!-- META -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/type.css">
+        <link rel="stylesheet" href="css/generalstyle.css">
+        <link rel="stylesheet" href="css/formstyle.css">
+    
+        <!-- Favicon Provided -->
+        <link rel="icon" type="image/svg" sizes="32x32" href="media/logo/FC-logo-isotipo.svg">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <!-- #region -->
+        <header>
+            <div class="top-header">
+                <picture>
+                    <source srcset="media/logo/FC-logo-isotipo.svg" 
+                        media="(max-width:480px)">
+                    <img src="media/logo/FC-logo-horizontal.svg" 
+                        alt="Fartera Catering Logo">
+                </picture>
+                <img src="media/icons/bars-solid.svg" alt="Icono de Menu"
+                    class="ham_menu">
+                <nav class="top-prinav">
+                    <ul>
+                        <li>
+                            <a href="index.html" target="_parent" title="Ir a la pagina inicial">INICIO</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_parent" title="Ir a la pagina de historia">HISTORIA</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_parent" title="Ir a la pagina de servicios">SERVICIOS</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_self" title="Ir a la pagina de contacto">CONTACTO</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <nav aria-label="Breadcrumb" class="breadcrumb">
+                <ol>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="#" aria-current="page">CONTACTO</a></li>
+                </ol>
+            </nav>
+        </header>
+        <!-- #endregion -->
+    
+        <!-- CONTACT FORM -->
+        <!-- #region -->
+        <form id="conctact-form" name="conctact-form" method="post">
+            <h1>CONTACTO</h1>
+            <fieldset>
+                <legend>Solicita presupuesto</legend>
+                <ul>
+                    <li>
+                        <label for="interested-name">Nombre</label>
+                        <input id="interested-name" name="interested-name" 
+                            type="text" minlength="1"
+                            placeholder="Porfavor introduzca un nombre" required>
+                    </li>
+                    <li>
+                        <label for="workstation">Empresa</label>
+                        <input id="workstation" name="workstation"
+                            type="text" minlength="1"
+                            placeholder="Porfavor introduzca un nombre" required>
+                    </li>
+                    <li>
+                        <label for="url-web">Web</label>
+                        <input id="url-web" name="url-web"
+                            type="url" minlength="1"
+                            placeholder="Porfavor introduzca una url"
+                            title="No olvides agregar https:// al link" required>
+                    </li>
+                    <li>
+                        <label for="num-of-asist">
+                            Número de asistentes aproximado 
+                            <span>(mínimo 20 - máximo 200)</span>
+                        </label>
+                        <input id="num-of-asist" name="num-of-asist"
+                            type="number" min="20" max="200" value="20"
+                            placeholder="Porfavor introduzca un numero de asistentes" required>
+                    </li>
+                    <li>
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" type="email" 
+                            pattern="^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$" 
+                            placeholder="Porfavor introduzca un email" required>
+                    </li>
+                    <li>
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </li>
+                    <li class="makeme-row">
+                        <input id="chk-privp" name="chk-privp" type="checkbox" required>
+                        <label for="chk-privp">
+                            He leído y acepto la 
+                            <a href="www.farteracatering.com/politica-de-privacidad" 
+                                target="_blank">
+                                política de privacidad
+                            </a>
+                        </label>
+                    </li>
+                    <li>
+                        <button type="submit">
+                            CONTACTAR
+                        </button>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+        <!-- #endregion -->
+    
+        <!-- SEE MORE SECTION -->
+        <!-- #region -->
+        <section class="see-more">
+            <h2>Descubre nuestros menús</h2>
+    
+            <div>
+                <article>
+                    <picture>
+                        <source srcset="media/img/empresa@1x.jpg,
+                                        media/img/empresa@2x.jpg    2x,
+                                        media/img/empresa@3x.jpg    3x">
+                        <img src="media/img/empresa@3x.jpg" alt="Fotografia de un plato elegante">
+                    </picture>
+                    <h3>Empresas</h3>
+                    <span>
+                        <a href="menu-empresas.html" title="Ver menu para Empresas">Ver menú</a>
+                    </span>
+                </article>
+        
+                <article>
+                    <picture>
+                        <source srcset="media/img/celebraciones@1x.jpg,
+                                        media/img/celebraciones@2x.jpg    2x,
+                                        media/img/celebraciones@3x.jpg    3x">
+                        <img src="media/img/celebraciones@3x.jpg" alt="Fotografia de un plato exotico">
+                    </picture>
+                    <h3>Celebraciones</h3>
+                    <span>
+                        <a href="#" title="Ver menu para Celebraciones">Ver menú</a>
+                    </span>
+                </article>
+        
+                <article>
+                    <picture>
+                        <source srcset="media/img/escuela@1x.jpg,
+                                        media/img/escuela@2x.jpg    2x,
+                                        media/img/escuela@3x.jpg    3x">
+                        <img src="media/img/escuela@3x.jpg" alt="Fotografia de un buffet">
+                    </picture>
+                    <h3>Escuelas</h3>
+                    <span>
+                        <a href="#" title="Ver menu para Escuelas">Ver menú</a>
+                    </span>
+                </article>
+            </div>
+        </section>
+        <!-- #endregion -->
+    
+        <!-- FOOTER -->
+        <!-- #region -->
+        <footer>
+            <ul>
+                <li>
+                    <span>© 2023 - Fartera Catering</span>
+                </li>
+                <li>
+                    <address>
+                        C/ Bailèn 126, 08009 Barcelona.
+                    </address>
+                </li>
+                <li>
+                    <address>Telf.: +34 617 10 91 09</address>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://facebook.com/FarteraCatering">
+                                <img src="media/icons/facebook-square-brands.svg" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://twitter.com/FarteraCatering">
+                                <img src="media/icons/twitter-square-brands.svg" alt="Twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://instagram.com/FarteraCatering">
+                                <img src="media/icons/instagram-square-brands.svg" alt="Instagramr">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Aviso legal</a>
+                </li>
+                <li>
+                    <a href="#">Política de privacidad</a>
+                </li>
+                <li>
+                    <a href="#">Política de cookies</a>
+                </li>
+            </ul>
+        </footer>
+        <!-- #endregion -->
+    
+        <!-- JS -->
+        <!-- #region -->
+        <script src="js/menu.js"></script>
+        <!-- #endregion -->
+    </body>
+</html>

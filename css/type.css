@@ -1,0 +1,43 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*                     Fonts                    */
+/*~ ------------------------------------------ ~*/
+
+/*  ROBOTO  */
+    /*  Rob-Light   */
+    @font-face{ 
+        font-family: 'Roboto-Light';
+        src: url('../media/fonts/Roboto-Light-webfont.eot');
+        src: url('../media/fonts/Roboto-Light-webfont.eot?iefix') format('eot'),
+             url('../media/fonts/Roboto-Light-webfont.woff') format('woff'),
+             url('../media/fonts/Roboto-Light-webfont.ttf') format('truetype'),
+             url('../media/fonts/Roboto-Light-webfont.svg#webfont') format('svg');
+        font-weight: 300;
+        font-style: normal;
+    }
+    /* ------------- */
+    /*  Rob-Regular  */
+    @font-face{ 
+        font-family: 'Roboto-Regular';
+        src: url('../media/fonts/Roboto-Regular-webfont.eot');
+        src: url('../media/fonts/Roboto-Regular-webfont.eot?iefix') format('eot'),
+            url('../media/fonts/Roboto-Regular-webfont.woff') format('woff'),
+            url('../media/fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+            url('../media/fonts/Roboto-Regular-webfont.svg#webfont') format('svg');
+        font-weight: 400;
+        font-style: normal;
+    }
+    /* ------------- */
+    /*  Rob-Medium   */
+    @font-face{ 
+        font-family: 'Roboto-Medium';
+        src: url('../media/fonts/Roboto-Medium-webfont.eot');
+        src: url('../media/fonts/Roboto-Medium-webfont.eot?iefix') format('eot'),
+             url('../media/fonts/Roboto-Medium-webfont.woff') format('woff'),
+             url('../media/fonts/Roboto-Medium-webfont.ttf') format('truetype'),
+             url('../media/fonts/Roboto-Medium-webfont.svg#webfont') format('svg');
+        font-weight: 500;
+        font-style: normal;
+    }
+    /* ------------- */
+/*  ------   */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/

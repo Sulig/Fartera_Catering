@@ -1,0 +1,91 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*                  Form Style                  */
+/*~ ------------------------------------------ ~*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+
+    padding: 0 1.25rem;
+}
+
+form legend {
+    margin: 0 auto;
+    margin-bottom: 3.125rem;
+    font-family: "Roboto-Light", Arial, Helvetica, sans-serif;
+    font-size: 2.25rem;
+    text-align: center;
+}
+form fieldset ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.56rem;
+}
+form ul li { 
+    list-style: none; 
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.makeme-row {
+    flex-direction: row;
+    align-items: center;
+    font-family: "Roboto-Light", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+.makeme-row a { text-decoration: underline; }
+label span { font-family: "Roboto-Light" }
+
+form textarea {
+    height: 6.25rem;
+    padding: 0.625rem;
+    border: 0;
+    background-color: rgba(148, 148, 148, 0.10);
+}
+
+form input {
+    height: 1rem;
+    padding: 0.625rem;
+    border: 0;
+    background-color: rgba(148, 148, 148, 0.10);
+}
+input[type="checkbox"] {
+    border: 1px solid black;
+    width: 1.375rem;
+    height: 1.375rem;
+    accent-color: var(--primary-color);
+}
+
+form button {
+    margin: 0 auto;
+    width: 10.9rem;
+    height: 2.25rem;
+
+    border: 0;
+    background-color: var(--primary-color);
+    font-family: "Roboto-Medium";
+    color: white;
+}
+form button:hover { 
+    filter: brightness(120%);
+    text-decoration: underline; 
+}
+form button:active { filter: brightness(90%); }
+/* -------------------------------------------- */
+/* //////////////////////////////////////////// */
+/*                   MOBILE                     */
+/* //////////////////////////////////////////// */
+@media screen and (max-width: 480px) {
+    form input[type="checkbox"] + label 
+    { font-size: 0.75rem; }
+
+    form button { width: 100%; }
+}
+/* //////////////////////////////////////////// */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/

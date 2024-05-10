@@ -1,0 +1,165 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*                 Index Style                  */
+/*~ ------------------------------------------ ~*/
+
+/*  Slideshow  */
+.top-slideshow { position: relative; }
+.slid-buttons {
+  height: 100%;
+  width: 100%;
+  padding: 0 3.125rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+
+  display: flex;
+  justify-content: space-between;
+}
+.sid-btn-bottom { 
+  align-self: end;
+  margin-bottom: 1rem;
+}
+.slid-buttons button {
+  background-color: transparent;
+  border: 0;
+}
+.play { display: none; }
+.slid-buttons button:active 
+{ filter: invert(60%); }
+.slid-images picture {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.slid-images img { width: 100%; }
+.slid-img-1 { z-index: 15; }
+/* Only when "Next" or "Prev" is pressed */
+.slid-img-preview { z-index: 5; }
+.slid-img-overlap { z-index: 10; }
+.slid-img-hide { display: none; }
+.slid-img-show { display: block; }
+/* ********************************* */
+/*  ~ Slideshow end ~   */
+/* ------------------------------------- */
+
+/*  Main  */
+main { 
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+}
+main div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+}
+main div article {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4.7rem;
+}
+main div article + article 
+{ flex-direction: row; }
+
+main article div {
+  width: 50%;
+  gap: 1.875rem;
+}
+main article img { 
+  width: 100%;
+  max-width: 36.5rem;
+}
+main article h2 {
+  font-family: "Roboto-Light", Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+}
+main article span {
+  display: block;
+  width: 45%;
+  background-color: var(--primary-color);
+  border-radius: 0.125rem;
+  /* offset-x, offset-y, blur, spread, color */
+  box-shadow: 0 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  padding: 0.625rem 1.25rem;
+}
+main span:hover {
+  filter: brightness(120%);
+  text-decoration: underline;
+}
+main span:active { 
+  box-shadow: 0 0 0;
+  filter: brightness(90%);
+  text-decoration: underline;
+}
+main span a:link {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main span a:visited { color: #ffffff; }
+/*  ~ Main end ~   */
+/* ------------------------------------- */
+
+/* //////////////////////////////////////////// */
+/*                   MOBILE                     */
+/* //////////////////////////////////////////// */
+@media screen and (max-width: 480px) {  
+  /* slideshow */
+    .top-slideshow { display: none; }
+  /* //////////////////////////// */
+
+  /* Main section */
+  main { padding: 0; gap: 2rem;}
+
+  h1 {padding: 0 2.5rem; }
+
+  main div article {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  main div article + article 
+  { flex-direction: column; }
+  main article div {
+    width: 90%;
+    max-width: 100%;
+    justify-content: center;
+  }
+  main article img { max-width: 100%; }
+  main article span { width: 100%; }
+  /* //////////////////////////// */
+}
+/* //////////////////////////////////////////// */
+
+/* //////////////////////////////////////////// */
+/*                    TABLET                    */
+/* //////////////////////////////////////////// */
+@media screen and (min-width: 481px) and (max-width: 720px) {  
+  /* Main section */
+  h1 {padding: 0 2.5rem; }
+
+  main div article {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  main div article + article 
+  { flex-direction: column; }
+  main article div {
+    width: 90%;
+    max-width: 100%;
+    justify-content: center;
+  }
+  main article img { max-width: 100%; }
+  main article span { width: 100%; }
+  /* //////////////////////////// */
+}
+/* //////////////////////////////////////////// */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
